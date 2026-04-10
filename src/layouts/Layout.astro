@@ -1,0 +1,63 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Chris Gilbert - Ruby Developer" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | Chris Gilbert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white text-gray-900 antialiased">
+    <div class="min-h-screen flex flex-col">
+      <header class="border-b border-gray-200">
+        <nav class="max-w-3xl mx-auto px-4 py-6 flex items-center justify-between">
+          <a href="/" class="text-xl font-semibold hover:text-gray-600 transition-colors">
+            Chris Gilbert
+          </a>
+          <ul class="flex gap-6 text-sm">
+            <li>
+              <a href="/" class="hover:text-gray-600 transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="/cv" class="hover:text-gray-600 transition-colors">CV</a>
+            </li>
+            <li>
+              <a href="/blog" class="hover:text-gray-600 transition-colors">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="flex-1 max-w-3xl mx-auto px-4 py-12 w-full">
+        <slot />
+      </main>
+
+      <footer class="border-t border-gray-200">
+        <div class="max-w-3xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
+          <p>&copy; {new Date().getFullYear()} Chris Gilbert. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  @import "../styles/global.css";
+</style>

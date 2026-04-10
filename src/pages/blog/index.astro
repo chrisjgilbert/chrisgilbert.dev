@@ -1,0 +1,49 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog"))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString("en-GB", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
+---
+
+<Layout title="Blog" description="Blog posts by Chris Gilbert">
+  <article class="space-y-8">
+    <header>
+      <h1 class="text-4xl font-bold mb-4">Blog</h1>
+      <p class="text-xl text-gray-600">
+        Thoughts on Ruby, software development, and other topics.
+      </p>
+    </header>
+
+    {
+      posts.length === 0 ? (
+        <p class="text-gray-600">No posts yet. Check back soon!</p>
+      ) : (
+        <ul class="space-y-6">
+          {posts.map((post) => (
+            <li class="border-b border-gray-200 pb-6 last:border-0">
+              <a href={`/blog/${post.id}`} class="group block space-y-2">
+                <h2 class="text-xl font-semibold group-hover:text-gray-600 transition-colors">
+                  {post.data.title}
+                </h2>
+                <p class="text-sm text-gray-500">
+                  {formatDate(post.data.pubDate)}
+                </p>
+                <p class="text-gray-700">{post.data.description}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </article>
+</Layout>

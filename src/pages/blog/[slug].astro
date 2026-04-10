@@ -1,0 +1,47 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection, render, type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString("en-GB", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
+---
+
+<Layout title={post.data.title} description={post.data.description}>
+  <article class="prose">
+    <header class="mb-8">
+      <h1>{post.data.title}</h1>
+      <p class="text-gray-500 text-sm">
+        Published on {formatDate(post.data.pubDate)}
+        {
+          post.data.updatedDate && (
+            <span> (Updated: {formatDate(post.data.updatedDate)})</span>
+          )
+        }
+      </p>
+    </header>
+    <Content />
+    <footer class="mt-12 pt-6 border-t border-gray-200">
+      <a href="/blog" class="text-blue-600 hover:underline">&larr; Back to blog</a>
+    </footer>
+  </article>
+</Layout>
