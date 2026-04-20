@@ -2,6 +2,7 @@
 title: "My AI tooling journey"
 description: "From Copilot to Cursor to Claude Code to Codex — how my AI coding workflow has evolved, and where I think it's heading."
 pubDate: 2026-04-20
+draft: true
 ---
 
 Like a lot of engineers, my AI tooling journey started with GitHub Copilot. Method-level autocomplete, a bit of help with boilerplate. As a Ruby developer it was handy for the obvious stuff — `initialize` methods, attribute readers — but it was limited and often noisy.
