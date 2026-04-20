@@ -8,14 +8,6 @@ const experience = [
     location: "London",
     period: "Mar 2022 - Present",
     tech: "Ruby, Rails, Turbo, Stimulus, Sinatra, MySQL, GCP",
-    highlights: [
-      "Joined as engineer #3 pre Series A (led by Lightspeed)",
-      "Operate as a Full Stack Product Engineer within a cross-functional product team, owning features from discovery to delivery",
-      "Led features including the first carbon credit purchase flow, project shortlisting, shareable project pages, and the Carbon Removal Credit Manager",
-      "Led engineering initiatives to improve testing through xUnit patterns, enhance accessibility, and establish a company-wide design system",
-      "Spearheading AI adoption within the Engineering function",
-      "Promoted to Senior in Apr 2023",
-    ],
   },
   {
     title: "Software Engineer",
@@ -23,12 +15,6 @@ const experience = [
     location: "London",
     period: "Oct 2021 - Feb 2022",
     tech: "Elixir, Elm, Phoenix, JavaScript, React, MySQL, AWS",
-    highlights: [
-      "Worked within a cross-functional product team focused on candidate experience using Elixir/Phoenix and Elm",
-      "Developed a scheduling tool with Phoenix Live View that significantly improved the Early Talent Team's booking efficiency",
-      "Led efforts to standardize feature lifecycle processes across the product team",
-      "Participated in an engineering culture emphasizing pair programming, code reviews, and best practices",
-    ],
   },
   {
     title: "Junior Software Engineer",
@@ -36,43 +22,16 @@ const experience = [
     location: "London",
     period: "Apr 2019 - Sep 2021",
     tech: "Ruby, Rails, Sinatra, JavaScript, React, React Native, GCP, MySQL",
-    highlights: [
-      "Joined from Makers Academy",
-      "Progressed from Junior to domain expert in the high traffic Rails app - songkick.com",
-      "Worked migrating the native iOS and Android apps to React Native",
-      "Gained experience with microservice architecture, ETL, ElasticSearch, Kibana, Prometheus, Docker, BigQuery, and SQL",
-    ],
   },
   {
-    title: "Sound Engineer",
+    title: "Sound Engineer (pre career change)",
     company: "750mph, McCann, Offset Audio",
     location: "London",
     period: "2013 - 2018",
     tech: null,
-    highlights: [
-      "Worked in audio post production prior to career change into software engineering",
-    ],
   },
 ];
 
-const education = [
-  {
-    institution: "Makers Academy",
-    location: "London",
-    qualification: "Developer Bootcamp",
-    period: "Oct 2018 - Jan 2019",
-    details: [
-      "12 week developer bootcamp covering Ruby, JavaScript and Python",
-      "Learned TDD and other Extreme Programming practices",
-    ],
-  },
-  {
-    institution: "Northbrook College",
-    qualification: "Foundation Degree, Music Production",
-    period: "2010 - 2012",
-    details: [],
-  },
-];
 
 const skills = {
   languages: ["Ruby", "JavaScript", "Elixir"],
@@ -114,11 +73,6 @@ const skills = {
               {job.tech && (
                 <p class="text-sm text-gray-500">{job.tech}</p>
               )}
-              <ul class="list-disc list-outside ml-5 text-gray-700 space-y-1 mt-2">
-                {job.highlights.map((highlight) => (
-                  <li>{highlight}</li>
-                ))}
-              </ul>
             </div>
           ))
         }
@@ -171,37 +125,21 @@ const skills = {
 
     <section>
       <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">
-        Education
-      </h2>
-      <div class="space-y-6">
-        {
-          education.map((edu) => (
-            <div class="space-y-1">
-              <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
-                <h3 class="text-lg font-semibold">{edu.institution}</h3>
-                <span class="text-sm text-gray-500">{edu.period}</span>
-              </div>
-              <p class="text-gray-600">{edu.qualification}</p>
-              {edu.details.length > 0 && (
-                <ul class="list-disc list-outside ml-5 text-gray-700 space-y-1 mt-2">
-                  {edu.details.map((detail) => (
-                    <li>{detail}</li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          ))
-        }
-      </div>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">
-        Contact
+        Contact & Links
       </h2>
       <p class="text-gray-700">
         <a href="mailto:chris@chrisgilbert.dev" class="text-blue-600 hover:underline">
           chris@chrisgilbert.dev
+        </a>
+      </p>
+      <p class="text-gray-700">
+        <a href="https://www.linkedin.com/in/chrisjgilbert88/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
+          LinkedIn
+        </a>
+      </p>
+      <p class="text-gray-700">
+        <a href="https://github.com/chrisjgilbert" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
+          Github
         </a>
       </p>
     </section>
