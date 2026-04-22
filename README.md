@@ -1,6 +1,8 @@
 # chrisgilbert.dev
 Personal website built using Astro.
 
+Live at [chrisgilbert.dev](https://www.chrisgilbert.dev).
+
 ## 🧞 Commands
 
 | Command                   | Action                                           |
