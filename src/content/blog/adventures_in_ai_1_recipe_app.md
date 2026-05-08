@@ -8,7 +8,7 @@ I rewrote an entire app in the swimming pool last week.
 
 Specifically, I rewrote my [perennial side project](/blog/lunch-hunch) — a personal recipe manager — from Next.js + FastAPI to Rails + Inertia, in fragments between lengths, on my phone!
 
-The app is (hopefully) live at [cookery.gilbert.work](https://cookery.gilbert.work), the code is (expectantly) [on GitHub](https://github.com/chrisjgilbert/recipes).
+The app is (hopefully) live at [cooking.gilbert.works](https://cooking.gilbert.works), the code is (expectantly) [on GitHub](https://github.com/chrisjgilbert/recipes).
 
 ## The itch (briefly)
 
