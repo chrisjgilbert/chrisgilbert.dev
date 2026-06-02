@@ -16,6 +16,13 @@ So I thought I'd build another personal app that solves a very specific need I h
 
 The result was [Orra](https://github.com/chrisjgilbert/orra) – a personal podcast / audio narration tool. I give it an area or topic along with a target duration and it gives me an MP3 back I can listen to.
 
+<figure>
+    <img src="/orra.png" alt="" loading="lazy">
+    <figcaption>
+        My Claude Code review task
+    </figcaption>
+</figure>
+
 ## How it works
 
 It's a Flask app and I give it a description of what I want to learn about and a target duration. That's then sent off to an OpenAI LLM with a system prompt telling it to write me a transcript.
