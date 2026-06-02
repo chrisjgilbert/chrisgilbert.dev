@@ -1,6 +1,6 @@
 ---
 title: "Adventures in AI: my personal recipe saver app"
-description: "It's finally live"
+description: "I can finally save all the recipes I continually have to Google for and navigate 100 ads to view"
 pubDate: 2026-05-08
 ---
 

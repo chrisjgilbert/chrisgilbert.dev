@@ -1,6 +1,6 @@
 ---
 title: "Lunch Hunch"
-description: "I am mildly AI pilled"
+description: "AI is enabling me to scratch those itches"
 pubDate: 2026-04-10
 ---
 
