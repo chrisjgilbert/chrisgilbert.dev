@@ -1,7 +1,7 @@
 ---
 title: "Adventures in AI: personal podcast generator"
 description: "Building a personal tool to learn about things via audio whilst on the move"
-pubDate: 2026-05-08
+pubDate: 2026-06-02
 ---
 
 Music and audio is a big passion of mine; I worked as a Sound Engineer for several years before becoming a Software Engineer, and played in bands for many years too.
