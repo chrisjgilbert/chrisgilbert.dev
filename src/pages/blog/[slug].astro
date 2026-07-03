@@ -30,7 +30,7 @@ function formatDate(date: Date): string {
   <article class="prose">
     <header class="mb-8">
       <h1>{post.data.title}</h1>
-      <p class="text-gray-500 text-sm">
+      <p class="text-ink-soft text-sm">
         Published on {formatDate(post.data.pubDate)}
         {
           post.data.updatedDate && (
@@ -40,8 +40,8 @@ function formatDate(date: Date): string {
       </p>
     </header>
     <Content />
-    <footer class="mt-12 pt-6 border-t border-gray-200">
-      <a href="/blog" class="text-blue-600 hover:underline">&larr; Back to blog</a>
+    <footer class="mt-12 pt-6 border-t border-hairline">
+      <a href="/blog" class="text-accent hover:underline">&larr; Back to blog</a>
     </footer>
   </article>
 </Layout>

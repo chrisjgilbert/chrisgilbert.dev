@@ -27,51 +27,43 @@ const { title, description = "Chris Gilbert - Ruby Developer" } = Astro.props;
       async
       src="//gc.zgo.at/count.js"></script>
   </head>
-  <body class="bg-white text-gray-900 antialiased">
+  <body class="bg-canvas text-ink antialiased">
     <div class="min-h-screen flex flex-col">
-      <header class="border-b border-gray-200">
-        <nav class="max-w-3xl mx-auto px-4 py-6 flex items-center justify-between">
-          <a href="/" class="text-xl font-semibold hover:text-gray-600 transition-colors">
+      <div class="sticky top-0 z-20 flex justify-center px-4 py-4">
+        <nav class="flex items-center gap-2 bg-surface/70 backdrop-blur-xl border border-hairline rounded-full pl-5 pr-2 py-2 text-sm">
+          <a href="/" class="font-semibold mr-2 hover:text-accent transition-colors">
             Chris Gilbert
           </a>
-          <ul class="flex gap-6 text-sm">
-            <li>
-              <a href="/" class="hover:text-gray-600 transition-colors">Home</a>
-            </li>
-            <li>
-              <a href="/cv" class="hover:text-gray-600 transition-colors">CV</a>
-            </li>
-            <li>
-              <a href="/blog" class="hover:text-gray-600 transition-colors">Blog</a>
-            </li>
-          </ul>
+          <a href="/" class="px-3 py-1.5 rounded-full text-ink-soft hover:text-ink hover:bg-accent-soft transition-colors">Home</a>
+          <a href="/cv" class="px-3 py-1.5 rounded-full text-ink-soft hover:text-ink hover:bg-accent-soft transition-colors">CV</a>
+          <a href="/blog" class="px-3 py-1.5 rounded-full text-ink-soft hover:text-ink hover:bg-accent-soft transition-colors">Blog</a>
         </nav>
-      </header>
+      </div>
 
       <main class="flex-1 max-w-3xl mx-auto px-4 py-12 w-full">
         <slot />
       </main>
 
-      <footer class="border-t border-gray-200">
-        <div class="max-w-3xl mx-auto px-4 py-6 text-center text-sm text-gray-500 space-y-3">
+      <footer class="border-t border-hairline">
+        <div class="max-w-3xl mx-auto px-4 py-6 text-center text-sm text-ink-soft space-y-3">
           <ul class="flex justify-center gap-4">
             <li>
-              <a href="mailto:chris@chrisgilbert.dev" class="hover:text-gray-700 transition-colors">
+              <a href="mailto:chris@chrisgilbert.dev" class="hover:text-accent transition-colors">
                 Email
               </a>
             </li>
             <li>
-              <a href="https://bsky.app/profile/chrisgilbertdev.bsky.social" target="_blank" rel="noopener" class="hover:text-gray-700 transition-colors">
+              <a href="https://bsky.app/profile/chrisgilbertdev.bsky.social" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
                 Bluesky
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/chrisjgilbert88/" target="_blank" rel="noopener" class="hover:text-gray-700 transition-colors">
+              <a href="https://www.linkedin.com/in/chrisjgilbert88/" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://github.com/chrisjgilbert" target="_blank" rel="noopener" class="hover:text-gray-700 transition-colors">
+              <a href="https://github.com/chrisjgilbert" target="_blank" rel="noopener" class="hover:text-accent transition-colors">
                 Github
               </a>
             </li>
