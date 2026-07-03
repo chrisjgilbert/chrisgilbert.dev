@@ -79,7 +79,9 @@ If step 1 applies no fixes (clean review), still run step 2 to verify the existi
 
 I’ve found the code review particularly effective. Until recently I have been code reviewing and I now trust this skill enough that I only need to pay attention to the high level; I don’t need to go through every line critically.
 
-It’s <a href="https://www.towardsdeeplearning.com/tired-of-claude-codes-over-engineering-ponytail-is-here-for-you-09b8891ceaad" rel="external">commonly known</a> that agents write superfluous code and often disobey YAGNI liberally. Combining `/code-review` with `/simplify` really helps guard against this.
+The big thing for me is that the code-review skill spins up sub agents to review the diff from different angles — security, behaviour, and more. Having several independent reviewers each looking for something specific is really powerful.
+
+It’s <a href="https://www.towardsdeeplearning.com/tired-of-claude-codes-over-engineering-ponytail-is-here-for-you-09b8891ceaad" rel="external">commonly known</a> that agents write superfluous code and often disobey YAGNI liberally. `/simplify` guards specifically against this, trimming back anything that didn’t need to be written.
 
 The verification using Claude in Chrome is helpful too because I can easily see what’s being tested, or let it run in the background.
 
