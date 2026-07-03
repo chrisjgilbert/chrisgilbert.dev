@@ -1,6 +1,38 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@theme {
+  --color-canvas: #f0ede0;
+  --color-surface: #f9f7ec;
+  --color-ink: #16231b;
+  --color-ink-soft: #66735f;
+  --color-accent: #5c7a3a;
+  --color-accent-soft: #5c7a3a24;
+  --color-hairline: #16231b1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-canvas: #0e1510;
+    --color-surface: #172016;
+    --color-ink: #eaf0e4;
+    --color-ink-soft: #9bab8f;
+    --color-accent: #8fb35e;
+    --color-accent-soft: #8fb35e29;
+    --color-hairline: #eaf0e41f;
+  }
+}
+
 body {
   font-family: "Inter", system-ui, sans-serif;
+}
+
+.prose {
+  color: var(--color-ink);
+}
+.prose a {
+  color: var(--color-accent);
+}
+.prose strong {
+  color: var(--color-ink);
 }
