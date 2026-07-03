@@ -1,6 +1,6 @@
 ---
 title: "Levelling up my Claude Code skills"
-description: "I stopped babysitting the agent and started giving it a proper playbook."
+description: "I stopped babysitting Claude and started giving it a proper playbook."
 pubDate: 2026-07-03
 ---
 
