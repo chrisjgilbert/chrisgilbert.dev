@@ -33,14 +33,33 @@ const experience = [
 ];
 
 
-const skills = {
-  languages: ["Ruby", "JavaScript", "Elixir"],
-  frameworks: ["Rails", "Turbo", "Stimulus", "Phoenix", "React", "React Native"],
-  databases: ["MySQL", "PostgreSQL"],
-  cloud: ["GCP", "AWS"],
-  tools: ["Docker", "ElasticSearch", "Kibana", "Prometheus", "BigQuery", "Sentry"],
-  methodologies: ["TDD", "Agile", "xUnit testing patterns"],
-};
+const projects = [
+  {
+    name: "TokenPrice",
+    url: "https://tokenprice.fyi/",
+    description: "LLM token pricing comparison tool",
+  },
+  {
+    name: "Stablemate",
+    url: "https://stablemate.dev/",
+    description: "Horse racing data and analysis",
+  },
+  {
+    name: "claude-ruby-quality",
+    url: "https://github.com/chrisjgilbert/claude-ruby-quality",
+    description: "Claude Code plugin for detecting Ruby/Rails code and test smells",
+  },
+  {
+    name: "orra",
+    url: "https://github.com/chrisjgilbert/orra",
+    description: "Personal podcast generator",
+  },
+  {
+    name: "recipes",
+    url: "https://github.com/chrisjgilbert/recipes",
+    description: "Personal recipe manager",
+  },
+];
 ---
 
 <Layout title="CV" description="Chris Gilbert - Senior Full Stack Engineer specializing in Ruby on Rails">
@@ -81,45 +100,24 @@ const skills = {
 
     <section>
       <h2 class="text-2xl font-semibold mb-6 pb-2 border-b border-gray-200">
-        Skills
+        Projects
       </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div>
-          <h3 class="font-semibold mb-2">Languages</h3>
-          <ul class="space-y-1 text-gray-700">
-            {skills.languages.map((skill) => <li>{skill}</li>)}
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-2">Frameworks</h3>
-          <ul class="space-y-1 text-gray-700">
-            {skills.frameworks.map((skill) => <li>{skill}</li>)}
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-2">Databases</h3>
-          <ul class="space-y-1 text-gray-700">
-            {skills.databases.map((skill) => <li>{skill}</li>)}
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-2">Cloud</h3>
-          <ul class="space-y-1 text-gray-700">
-            {skills.cloud.map((skill) => <li>{skill}</li>)}
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-2">Tools</h3>
-          <ul class="space-y-1 text-gray-700">
-            {skills.tools.map((skill) => <li>{skill}</li>)}
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-semibold mb-2">Methodologies</h3>
-          <ul class="space-y-1 text-gray-700">
-            {skills.methodologies.map((skill) => <li>{skill}</li>)}
-          </ul>
-        </div>
+      <div class="space-y-4">
+        {
+          projects.map((project) => (
+            <div class="space-y-1">
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener"
+                class="text-blue-600 hover:underline font-medium"
+              >
+                {project.name}
+              </a>
+              <p class="text-gray-600 text-sm">{project.description}</p>
+            </div>
+          ))
+        }
       </div>
     </section>
 
