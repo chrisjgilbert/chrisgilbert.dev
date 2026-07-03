@@ -28,11 +28,11 @@ The thing that struck me was that I'd done it on my phone, between lengths. Twen
 
 ## Why Inertia
 
-I love reactive UIs and I have enjoyed working React in the past. However, I hate the complexity that usually comes with it.
+I love reactive UIs and have had fun with React before, but I hate the complexity it usually drags in.
 
-[Inertia.js](https://inertiajs.com) is the bit I'd been wanting to try for a while. You write controllers like a normal Rails app, but instead of rendering ERB you return props to a React page component. No API to design. No client-side router. No state-sync ceremony. The reactive bits stay reactive; everything else stays boring.
+[Inertia.js](https://inertiajs.com) is the bit I'd been wanting to try for a while. You write controllers like a normal Rails app, but instead of rendering ERB you return props to a React page component. No API to design, no client-side router, no state-sync ceremony to fight with — the reactive bits stay reactive, everything else stays boring.
 
-This connects to a thread from my [tooling post](/blog/my-ai-tooling-journey) — staying light. I'd rather spend the cognitive budget on the bits that matter: the data model, the small UX decisions, what the thing should actually do. Inertia means the boring layer stays boring.
+This connects to a thread from my [tooling post](/blog/my-ai-tooling-journey) — staying light. I'd rather spend my energy on the bits that matter: the data model, the small UX decisions, what the thing should actually do. Inertia means the boring layer stays boring.
 
 ## The age of personal apps
 

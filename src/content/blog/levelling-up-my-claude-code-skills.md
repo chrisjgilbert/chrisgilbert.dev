@@ -1,6 +1,6 @@
 ---
 title: "Levelling up my Claude Code skills"
-description: "Using commands, skills, and repeatable workflows have unlocked a new level of productivity for me."
+description: "I stopped babysitting the agent and started giving it a proper playbook."
 pubDate: 2026-07-03
 ---
 

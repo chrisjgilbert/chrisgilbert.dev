@@ -20,7 +20,7 @@ I've started having what I call a "lunch hunch": there's something I want to exp
 
 ## Hunches this month
 
-None of these would exist without AI coding tools. Pre this AI era, I'd never have even attempted them.
+None of these would exist without AI coding tools. Before agents, I'd never have even attempted half of these.
 
 - A Slackbot that reacts to messages and proposes updates to our database at work
 - A feature that watches for mentions of entities in the media and notifies us
@@ -31,6 +31,6 @@ None of these would exist without AI coding tools. Pre this AI era, I'd never ha
 
 A lot of my ideas are very unformed, so the output will be far from perfect — and that's fine. It's about exploring. I'm not shipping this to production tomorrow. I just have itches I want to scratch and I'm curious what's possible.
 
-A lot of people think the cost of these tools will go up considerably and we're in a golden age right now. I'm keen to make the most of it while tokens are relatively cheap and I have the ideas to pursue.
+Everyone keeps saying token prices will eventually shoot up and we're in a golden age right now — probably true, so I'm making the most of it while tokens are cheap and I have the ideas to pursue.
 
 I've started messing about with Claude Code on mobile and can see how the "lunch hunch" might become the "all day hunch".
