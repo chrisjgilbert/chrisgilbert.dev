@@ -19,7 +19,7 @@ The result was [Orra](https://github.com/chrisjgilbert/orra) – a personal podc
 <figure>
     <img src="/orra.png" alt="" loading="lazy">
     <figcaption>
-        The episode list ranges from "Your First AI Agent Loop Explained With Tomatoes" to "Saints Relegated Faster Than Anyone In History" — solid range for a tool built for an audience of one.
+        The episode list ranges from "Your First AI Agent Loop Explained With Tomatoes" to "Saints Relegated Faster Than Anyone In History".
     </figcaption>
 </figure>
 
